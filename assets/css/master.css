@@ -1,0 +1,155 @@
+:root {
+    --Bright-Red: hsl(12, 88%, 59%);
+    --Dark-Blue: hsl(228, 39%, 23%);
+
+    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%);
+    --Vary-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: Be_Vietnam_Pro;
+    background-image: url("../../public/images/_general/bg-tablet-pattern.svg"), url("../../public/images/_general/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: right -20vw top -40vh, left -30vw bottom 20vh;
+}
+
+.btn {
+    background-color: var(--Bright-Red);
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+.row {
+    border: none;
+}
+
+.row .card {
+    border: none;
+    padding: 1rem;
+}
+
+.hero-section .row .card {
+    background-color: transparent !important;
+}
+
+h1.card-title {
+    color: var(--Dark-Blue);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.card-text {
+    color: var(--Dark-Grayish-Blue);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+h2.card-title {
+    color: var(--Dark-Blue);
+    font-size: 2rem;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.list-group {
+    padding: 1rem;
+}
+
+.list-group .list-group-item {
+    border: none;
+}
+
+.list-group-item .badge {
+    background-color: var(--Bright-Red);
+}
+
+.list-group-item .fw-bold {
+    color: var(--Dark-Blue);
+}
+
+.list-group-item p {
+    color: var(--Dark-Grayish-Blue);
+}
+
+.card-img-circle {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.top-footer {
+    background-color: var(--Bright-Red);
+    background-image: url("../../public/images/_general/bg-simplify-section-desktop.svg");
+}
+
+.btn-top-footer {
+    background-color: var(--Vary-Light-Gray);
+    color: var(--Bright-Red);
+}
+
+.top-footer h2 {
+    color: var(--Vary-Light-Gray);
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+footer {
+    background-color: var(--Very-Dark-Blue);
+}
+
+ul li {
+    margin-top: 1rem;
+}
+
+ul li a {
+    color: var(--Vary-Light-Gray);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.media-icon{
+    color: white;
+}
+
+.footer-form {
+    border: none;
+    border-radius: 5rem;
+    padding: 0.4rem;
+}
+
+.footer-text {
+    color: var(--Dark-Grayish-Blue);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        padding: 1rem;
+    }
+}
