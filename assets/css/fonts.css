@@ -2,16 +2,33 @@
     font-family: 'Be_Vietnam_Pro';
     src: url('../../public/fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf');
     font-weight: 400 ;
+    unicode-range: U+0020-007F;
 }
 
 @font-face {
     font-family: 'Be_Vietnam_Pro';
     src: url('../../public/fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf');
     font-weight: 500 ;
+    unicode-range: U+0020-007F;
 }
 
 @font-face {
     font-family: 'Be_Vietnam_Pro';
     src: url('../../public/fonts/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf');
     font-weight: 700 ;
+    unicode-range: U+0020-007F;
+}
+
+@font-face {
+    font-family: 'Be_Vietnam_Pro';
+    src: url('../../public/fonts/Be_Vietnam_Pro/BeVietnamPro-Medium.ttf');
+    font-weight: 500;
+    unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+@font-face {
+    font-family: 'Be_Vietnam_Pro';
+    src: url('../../public/fonts/Be_Vietnam_Pro/BeVietnamPro-Bold.ttf');
+    font-weight: 700;
+    unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
 }

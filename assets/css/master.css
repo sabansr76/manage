@@ -8,11 +8,49 @@
     --Vary-Light-Gray: hsl(0, 0%, 98%);
 }
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Be_Vietnam_Pro;
-    background-image: url("../../public/images/_general/bg-tablet-pattern.svg"), url("../../public/images/_general/bg-tablet-pattern.svg");
+    font-family: Be_Vietnam_Pro, serif;
+    background-image: url("../../public/images/bg-tablet-pattern.svg"), url("../../public/images/_general/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
-    background-position: right -20vw top -40vh, left -30vw bottom 20vh;
+    background-position: right -20vw top -40vh, left -40vw bottom 80vh;
+}
+
+h1 {
+    font-size: min(max(1rem, calc(0.5rem + 3.5vw)), 3.5rem);
+}
+
+h2 {
+    font-size: min(max(1rem, calc(0.5rem + 2vw)), 2rem);
+}
+
+h5 {
+    font-size: min(max(0.8rem, calc(0.2rem + 1.1vw)), 1.5rem);
+}
+
+p {
+    font-size: min(max(0.8rem, calc(0.2rem + 1.1vw)), 1rem);
+}
+
+.btn{
+    font-size: min(max(0.8rem, calc(0.2rem + 1.1vw)), 1rem);
+}
+
+ul li{
+    font-size: min(max(0.8rem, calc(0.2rem + 1.1vw)), 1rem);
+}
+
+ul li a{
+    font-size: min(max(0.8rem, calc(0.2rem + 1.1vw)), 1rem);
+}
+
+a{
+    font-size: min(max(0.8rem, calc(0.2rem + 1.1vw)), 1rem);
 }
 
 .btn {
@@ -97,7 +135,7 @@ h2.card-title {
 
 .top-footer {
     background-color: var(--Bright-Red);
-    background-image: url("../../public/images/_general/bg-simplify-section-desktop.svg");
+    background-image: url("../../public/images/bg-simplify-section-desktop.svg");
 }
 
 .btn-top-footer {
@@ -129,27 +167,37 @@ ul li a {
     color: white;
 }
 
-.footer-form {
-    border: none;
-    border-radius: 5rem;
-    padding: 0.4rem;
-}
-
 .footer-text {
     color: var(--Dark-Grayish-Blue);
     font-size: 0.8rem;
     font-weight: 400;
 }
 
-@media (max-width: 768px) {
-    .reverse {
+.footer-text-md {
+    color: var(--Dark-Grayish-Blue);
+    font-weight: 400;
+}
+
+@media  (max-width:768px){
+    .img-fluid img{
+        max-width: 100%;
+    }
+
+    .row-reverse{
+        flex-direction: column-reverse;
+    }
+
+    .footer-image{
         display: flex;
         flex-direction: column-reverse;
     }
-}
 
-@media (max-width: 768px) {
-    .search-bar {
-        padding: 1rem;
+    .media-icon{
+        font-size: clamp(0.7rem, 6vw, 2rem);
+    }
+
+    .footer-text{
+        display: none;
     }
 }
+
